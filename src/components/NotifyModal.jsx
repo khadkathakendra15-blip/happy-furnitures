@@ -25,9 +25,9 @@ export default function NotifyModal({ isOpen, onClose }) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm animate-in fade-in duration-200">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm animate-in fade-in duration-200">
       <div
-        className="relative w-full max-w-md bg-[#0D162B] border border-slate-700/60 rounded-2xl p-6 sm:p-8 shadow-2xl shadow-black/80"
+        className="relative w-full max-w-md bg-[#0D1322] border border-[#F18604]/30 rounded-2xl p-6 sm:p-8 shadow-2xl shadow-black/90"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close button */}
@@ -42,12 +42,12 @@ export default function NotifyModal({ isOpen, onClose }) {
         {!submitted ? (
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-white rounded-lg p-1 flex items-center justify-center">
+              <div className="w-10 h-10 bg-white rounded-lg p-1 flex items-center justify-center shadow-md">
                 <img src="/logo.jpg" alt="Happy Furnitures" className="w-full h-full object-contain" />
               </div>
               <div>
                 <h3 className="text-lg font-bold text-white tracking-wide">Stay Updated</h3>
-                <p className="text-xs text-slate-400">Happy Furnitures Launch Notification</p>
+                <p className="text-xs text-[#F1AB29]">Happy Furnitures Launch Notification</p>
               </div>
             </div>
 
@@ -62,7 +62,7 @@ export default function NotifyModal({ isOpen, onClose }) {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email address"
-                  className="w-full px-4 py-3 rounded-lg bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-[#E62B3A] focus:ring-1 focus:ring-[#E62B3A] text-sm transition-all"
+                  className="w-full px-4 py-3 rounded-lg bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-[#F18604] focus:ring-1 focus:ring-[#F18604] text-sm transition-all"
                   autoFocus
                 />
                 {error && <p className="text-xs text-red-400 mt-1.5">{error}</p>}
@@ -70,7 +70,7 @@ export default function NotifyModal({ isOpen, onClose }) {
 
               <button
                 type="submit"
-                className="w-full py-3 px-6 rounded-lg bg-[#E62B3A] hover:bg-[#ff3b4e] text-white font-semibold text-sm tracking-wider uppercase transition-all duration-300 shadow-[0_0_20px_rgba(230,43,58,0.5)] active:scale-[0.98]"
+                className="w-full py-3 px-6 rounded-lg bg-gradient-to-r from-[#F18604] to-[#E07800] hover:from-[#FF9E1B] hover:to-[#F18604] text-white font-bold text-sm tracking-wider uppercase transition-all duration-300 shadow-[0_4px_20px_rgba(241,134,4,0.5)] hover:shadow-[0_6px_25px_rgba(241,134,4,0.7)] active:scale-[0.98]"
               >
                 Notify Me
               </button>
@@ -78,12 +78,12 @@ export default function NotifyModal({ isOpen, onClose }) {
           </div>
         ) : (
           <div className="text-center py-4">
-            <div className="w-12 h-12 rounded-full bg-red-500/20 text-[#E62B3A] mx-auto flex items-center justify-center mb-3 text-xl font-bold">
+            <div className="w-12 h-12 rounded-full bg-[#F18604]/20 text-[#F18604] mx-auto flex items-center justify-center mb-3 text-xl font-bold">
               ✓
             </div>
             <h3 className="text-xl font-bold text-white mb-2">Thank you!</h3>
             <p className="text-sm text-slate-300 mb-6">
-              We've added <span className="text-white font-medium">{email}</span> to our priority VIP notification list. You'll hear from us as soon as we open.
+              We've added <span className="text-[#F1AB29] font-medium">{email}</span> to our priority VIP notification list. You'll hear from us as soon as we open.
             </p>
             <button
               onClick={handleReset}

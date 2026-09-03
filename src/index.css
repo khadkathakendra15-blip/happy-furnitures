@@ -10,24 +10,24 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #070E1E;
+  background-color: #080B12;
   overflow-x: hidden;
 }
 
-/* Custom glow text effects */
-.glow-text-red {
-  text-shadow: 0 0 20px rgba(230, 43, 58, 0.6), 0 0 40px rgba(230, 43, 58, 0.3);
+/* Custom glow text effects matching the logo orange */
+.glow-text-orange {
+  text-shadow: 0 0 20px rgba(241, 134, 4, 0.65), 0 0 45px rgba(241, 171, 41, 0.4);
 }
 
-.glow-box-red {
-  box-shadow: 0 4px 20px rgba(230, 43, 58, 0.5), 0 0 35px rgba(230, 43, 58, 0.3);
+.glow-box-orange {
+  box-shadow: 0 6px 25px rgba(241, 134, 4, 0.65), 0 0 45px rgba(241, 171, 41, 0.35);
 }
 
 .glow-bar {
-  box-shadow: 0 0 16px #E62B3A, 0 0 32px rgba(230, 43, 58, 0.7);
+  box-shadow: 0 0 16px #F18604, 0 0 32px rgba(241, 171, 41, 0.7);
 }
 
-/* Radial background gradient */
+/* Luxury warm ambient background gradient */
 .bg-ambient-radial {
-  background: radial-gradient(circle at 50% 40%, rgba(20, 38, 77, 0.6) 0%, rgba(7, 14, 30, 0.95) 75%, #050A16 100%);
+  background: radial-gradient(circle at 50% 35%, rgba(45, 27, 8, 0.65) 0%, rgba(13, 16, 26, 0.95) 70%, #06090F 100%);
 }

@@ -6,7 +6,7 @@ export default function Navbar() {
       {/* Brand Banner */}
       <div className="flex items-center gap-3 sm:gap-4 group cursor-pointer">
         {/* White Rounded Badge with Logo */}
-        <div className="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-xl shadow-md flex items-center justify-center p-1.5 transition-transform duration-300 group-hover:scale-105">
+        <div className="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-xl shadow-[0_4px_20px_rgba(241,134,4,0.2)] flex items-center justify-center p-1.5 transition-transform duration-300 group-hover:scale-105">
           <img
             src="/logo.jpg"
             alt="Happy Furnitures Logo"
@@ -19,7 +19,7 @@ export default function Navbar() {
           <span className="text-white font-black tracking-wider text-base sm:text-lg lg:text-xl uppercase drop-shadow-sm">
             Happy Furnitures
           </span>
-          <span className="text-[#E62B3A] font-bold text-xs sm:text-sm tracking-wider uppercase">
+          <span className="text-[#F18604] font-bold text-xs sm:text-sm tracking-wider uppercase">
             Pvt. Ltd.
           </span>
         </div>
@@ -29,7 +29,7 @@ export default function Navbar() {
       <div>
         <a
           href="#home"
-          className="inline-block border border-[#85222D] hover:border-[#E62B3A] text-white/90 hover:text-white px-5 sm:px-7 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold tracking-widest uppercase transition-all duration-300 hover:shadow-[0_0_15px_rgba(230,43,58,0.5)] active:scale-95"
+          className="inline-block border border-[#F18604]/50 hover:border-[#F18604] text-white/90 hover:text-white px-5 sm:px-7 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold tracking-widest uppercase transition-all duration-300 hover:shadow-[0_0_15px_rgba(241,134,4,0.5)] hover:bg-[#F18604]/10 active:scale-95"
         >
           Home
         </a>

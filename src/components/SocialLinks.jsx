@@ -45,7 +45,7 @@ export default function SocialLinks() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={social.name}
-          className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-slate-700/80 bg-slate-900/40 hover:bg-[#E62B3A] hover:border-[#E62B3A] text-slate-300 hover:text-white flex items-center justify-center transition-all duration-300 hover:shadow-[0_0_15px_rgba(230,43,58,0.5)] active:scale-95 group"
+          className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-slate-700/80 bg-slate-900/50 hover:bg-[#F18604] hover:border-[#F18604] text-slate-300 hover:text-white flex items-center justify-center transition-all duration-300 hover:shadow-[0_0_18px_rgba(241,134,4,0.6)] active:scale-95 group"
         >
           <div className="group-hover:scale-110 transition-transform duration-200">
             {social.icon}

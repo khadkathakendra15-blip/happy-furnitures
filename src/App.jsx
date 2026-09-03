@@ -9,9 +9,9 @@ export default function App() {
 
   return (
     <div className="relative min-h-screen flex flex-col justify-between bg-ambient-radial text-white overflow-hidden select-none">
-      {/* Subtle Background Lighting & Ambient Elements */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-red-600/10 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute bottom-10 left-1/4 w-[400px] h-[400px] bg-blue-600/10 rounded-full blur-[160px] pointer-events-none" />
+      {/* Warm Ambient Radial Glows Matching Logo */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[650px] bg-[#F18604]/15 rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute bottom-10 left-1/4 w-[450px] h-[450px] bg-[#F1AB29]/10 rounded-full blur-[160px] pointer-events-none" />
 
       {/* Header / Brand Banner */}
       <Navbar />
@@ -25,26 +25,26 @@ export default function App() {
             <span className="block text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.6)]">
               UNDER
             </span>
-            <span className="block text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-[#E62B3A] glow-text-red mt-1 sm:mt-2">
+            <span className="block text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-[#F18604] glow-text-orange mt-1 sm:mt-2">
               CONSTRUCTION
             </span>
           </h1>
 
           {/* Subtitle with accent lines */}
           <div className="flex items-center justify-center gap-3 sm:gap-4 my-6 sm:my-8 w-full max-w-md">
-            <div className="h-[1.5px] flex-1 bg-gradient-to-r from-transparent to-[#E62B3A]" />
+            <div className="h-[1.5px] flex-1 bg-gradient-to-r from-transparent to-[#F18604]" />
             <span className="text-white/90 text-xs sm:text-sm font-semibold tracking-[0.25em] sm:tracking-[0.3em] uppercase">
               Site Nearly Ready
             </span>
-            <div className="h-[1.5px] flex-1 bg-gradient-to-l from-transparent to-[#E62B3A]" />
+            <div className="h-[1.5px] flex-1 bg-gradient-to-l from-transparent to-[#F18604]" />
           </div>
 
           {/* Progress Bar Section */}
           <div className="w-full max-w-lg mb-8 sm:mb-10 px-2">
             {/* The Bar */}
-            <div className="w-full h-2 sm:h-2.5 bg-slate-800/80 rounded-full overflow-hidden border border-slate-700/40 p-[1px] relative">
+            <div className="w-full h-2 sm:h-2.5 bg-slate-900/90 rounded-full overflow-hidden border border-amber-900/30 p-[1px] relative">
               <div
-                className="h-full bg-gradient-to-r from-[#E62B3A] via-[#FF3B4E] to-[#FF6B6B] rounded-full glow-bar relative transition-all duration-1000 ease-out"
+                className="h-full bg-gradient-to-r from-[#F18604] via-[#FFAE33] to-[#F1AB29] rounded-full glow-bar relative transition-all duration-1000 ease-out"
                 style={{ width: `${progressPercent}%` }}
               >
                 {/* Shimmer light effect */}
@@ -53,7 +53,7 @@ export default function App() {
             </div>
 
             {/* Labels 0% and 100% */}
-            <div className="flex justify-between text-[11px] sm:text-xs font-semibold text-slate-400 mt-2 px-1">
+            <div className="flex justify-between text-[11px] sm:text-xs font-semibold text-amber-100/60 mt-2 px-1">
               <span>0%</span>
               <span>100%</span>
             </div>
@@ -63,7 +63,7 @@ export default function App() {
           <div className="mb-10 sm:mb-12">
             <button
               onClick={() => setIsModalOpen(true)}
-              className="px-8 sm:px-11 py-3.5 sm:py-4 bg-[#E62B3A] hover:bg-[#ff3b4e] text-white font-black text-xs sm:text-sm tracking-[0.18em] uppercase rounded-lg shadow-[0_6px_25px_rgba(230,43,58,0.7)] hover:shadow-[0_8px_35px_rgba(230,43,58,0.9)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300"
+              className="px-8 sm:px-11 py-3.5 sm:py-4 bg-gradient-to-r from-[#F18604] via-[#F39C12] to-[#F1AB29] hover:from-[#FF9E1B] hover:to-[#F18604] text-white font-black text-xs sm:text-sm tracking-[0.18em] uppercase rounded-lg shadow-[0_6px_25px_rgba(241,134,4,0.7)] hover:shadow-[0_8px_35px_rgba(241,134,4,0.9)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300"
             >
               Notify Me
             </button>
@@ -81,7 +81,7 @@ export default function App() {
       <footer className="w-full py-6 text-center text-xs text-slate-400/90 relative z-10 px-4">
         <p className="tracking-wide">
           © 2026 by{' '}
-          <span className="text-white/80 font-medium">Happy Furnitures Pvt. Ltd.</span>{' '}
+          <span className="text-[#F1AB29] font-medium">Happy Furnitures Pvt. Ltd.</span>{' '}
           Under Construction.
         </p>
       </footer>
